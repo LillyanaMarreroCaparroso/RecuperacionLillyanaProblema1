@@ -13,9 +13,9 @@ public class Main {
             System.out.println("Selecione una opcion");
             System.out.println("1. Encender impresora \n" +
                     "2. Apagar impresora \n" +
-                    "3. Añadir trabajo " +
-                    "4. Ver lista de trabajos" +
-                    "5. Imprimir" +
+                    "3. Añadir trabajo \n" +
+                    "4. Ver lista de trabajos \n" +
+                    "5. Imprimir \n" +
                     "6. Salir");
             opcion = sc.nextInt();
 
@@ -24,6 +24,7 @@ public class Main {
             switch (opcion) {
                 case 1:
                     impresoraNueva.estado = true;
+                    System.out.println("Impresora encendida");
                     break;
                 case 2:
                     impresoraNueva.estado = false;
@@ -38,14 +39,11 @@ public class Main {
                     impresoraNueva.enqueue(documentoUno);
                     break;
                 case 4:
-                    impresoraNueva.Impresion();
+
                     break;
                 case 5:
-
+                    impresoraNueva.Impresion();
             }
         } while (opcion != 6);
-
-
-
     }
 }

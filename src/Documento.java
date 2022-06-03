@@ -9,6 +9,11 @@ public class Documento {
         this.tamanioArchivo = tamanioArchivo;
     }
 
+    String getName(){
+        return nombreArchivo;
+    }
 
-
+    String getTamanio() {
+        return tamanioArchivo;
+    }
 }

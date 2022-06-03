@@ -22,12 +22,8 @@ public class Impresora {
     }
 
     public void Impresion() {
-        Iterator<Documento> it = cola.iterator();
-
-        //recorrer arraylist con iterador
-        while (it.hasNext()) {
-            Documento valor = it.next();
-            System.out.println(valor);
+        for(int i = 0; i < cola.size(); i++) {
+            System.out.println("Nombre: " + cola.get(i).getName() + "\n" + "Tamaño: " + cola.get(i).getTamanio());
         }
     }
 }
